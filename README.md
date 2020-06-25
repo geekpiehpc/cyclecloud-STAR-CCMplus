@@ -70,7 +70,7 @@ STAR-CCM+用のテンプレートになっています。
 以下の構成、特徴を持っています。
 
 1. OSS PBS ProジョブスケジューラをMasterノードにインストール
-1. H16r, H16r_Promo, HC44rs, HB60rsを想定したテンプレート、イメージ
+1. H16r, H16r_Promo, HC44rs, HB60rs, HB120s_v2を想定したテンプレート、イメージ
 	 - OpenLogic CentOS 7.6 HPC を利用 
 1. Masterノードに512GB * 2 のNFSストレージサーバを搭載
 	 - Executeノード（計算ノード）からNFSをマウント
@@ -92,7 +92,7 @@ STAR-CCM+用のテンプレートになっています。
    - cd cyclecloud-STAR-CCM+<version>
    - cyclecloud project upload azure-storage
    - cyclecloud import_template -f templates/pbs_extended_nfs_starccm.txt
-　　 - デフォルトのバイナリを変更可能(199行目当たりのデフォルトファイル名を設定変更)
+   - デフォルトのバイナリを変更可能(199行目当たりのデフォルトファイル名を設定変更)
 1. 削除したい場合、 cyclecloud delete_template STAR-CCM+ コマンドで削除可能
 
 ***
